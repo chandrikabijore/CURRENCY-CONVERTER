@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="Converter">
+      <h2>CURRENCY CONVERTER</h2>
+      <div class="input-group amount-box">
+        <label for="amount">Amount in Rupees (INR) :</label>
+        <input
+          type="number"
+          id="amount"
+          placeholder="Enter amount"
+          step="0.01"
+        />
+      </div>
+      <div class="input-group">
+        <label for="currency">Currency :</label>
+        <select id="currency">
+          <option value="USD">US Dollar (USD)</option>
+          <option value="GBP">British Pound (GBP)</option>
+          <option value="JPY">Japanese Yen (JPY)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="RUB">Russian Ruble (RUB)</option>
+          <option value="CAD">Canadian Dollar (CAD)</option>
+          <option value="AUD">Australian Dollar (AUD)</option>
+          <option value="CNY">Chinese Yuan (CNY)</option>
+        </select>
+      </div>
+      <button class="btn" onclick="convert()">Convert</button>
+      <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
